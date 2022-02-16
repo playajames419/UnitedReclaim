@@ -1,0 +1,28 @@
+gui:
+  title: 'Reclaim Menu' #Name of /reclaim gui
+  rows: 6 #Size of gui must be at least more than amount of reclaims
+  background: GLASS #Item used for populated space in the gui
+  permission: unitedreclaim.gui.access
+
+reclaim-item-key: '3nyS_"7^&TeSCRj=PK7@HfA.^'
+
+reclaims:
+  reclaim1:
+    permission: unitedreclaim.reclaim1
+    gui-item:
+      item: WHEAT
+      display-name: 'Reclaim 1'
+    rewards:
+      - '/addrank super-cool-donor'
+      - '/give 64 logs'
+      - '/broadcast {playername} just reclaimed their rewards!'
+
+  reclaim2:
+    permission: unitedreclaim.reclaim2
+    gui-item:
+      item: SUGAR_CANE
+      display-name: 'Reclaim 2'
+    rewards:
+      - '/addrank super-cool-donor-better'
+      - '/give 64 logs'
+      - '/broadcast {playername} just reclaimed their rewards!'

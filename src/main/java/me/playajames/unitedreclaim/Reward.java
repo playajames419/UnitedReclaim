@@ -1,2 +1,4 @@
-package me.playajames.unitedreclaim;public class Reward {
+package me.playajames.unitedreclaim;
+
+public class Reward {
 }

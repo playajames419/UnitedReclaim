@@ -1,2 +1,4 @@
-package me.playajames.unitedreclaim;public class RankItem {
+package me.playajames.unitedreclaim;
+
+public class RankItem {
 }
