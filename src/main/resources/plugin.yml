@@ -1,0 +1,5 @@
+name: '${project.version}'
+version: '${project.version}'
+main: me.playajames.unitedreclaim.UnitedReclaim
+api-version: 1.8.9
+authors: [ playajames ]
