@@ -1,28 +1,41 @@
-gui:
+message-prefix: '[UnitedReclaims] '
+deny-permission-message: "Sorry, you don't have permission to do that."
+gui: #Permission to access gui is unitedreclaim.gui.access
   title: 'Reclaim Menu' #Name of /reclaim gui
   rows: 6 #Size of gui must be at least more than amount of reclaims
   background: GLASS #Item used for populated space in the gui
-  permission: unitedreclaim.gui.access
-
 reclaim-item-key: '3nyS_"7^&TeSCRj=PK7@HfA.^'
 
 reclaims:
   reclaim1:
     permission: unitedreclaim.reclaim1
     gui-item:
-      item: WHEAT
+      item: 'WHEAT'
       display-name: 'Reclaim 1'
+      row: 2
+      column: 4
     rewards:
-      - '/addrank super-cool-donor'
-      - '/give 64 logs'
-      - '/broadcast {playername} just reclaimed their rewards!'
+      - 'tellraw You have reclaimed "Reclaim 1".'
+      - 'broadcast {player.name} just reclaimed their rewards!'
 
   reclaim2:
     permission: unitedreclaim.reclaim2
     gui-item:
       item: SUGAR_CANE
       display-name: 'Reclaim 2'
+      row: 2
+      column: 5
     rewards:
-      - '/addrank super-cool-donor-better'
-      - '/give 64 logs'
-      - '/broadcast {playername} just reclaimed their rewards!'
+      - 'tellraw You have reclaimed "Reclaim 2".'
+      - 'broadcast {player.name} just reclaimed their rewards!'
+
+  reclaim3:
+    permission: unitedreclaim.reclaim3
+    gui-item:
+      item: DIAMOND
+      display-name: 'Reclaim 3'
+      row: 2
+      column: 6
+    rewards:
+      - 'tellraw You have reclaimed "Reclaim 3".'
+      - 'broadcast {player.name} just reclaimed their rewards!'
