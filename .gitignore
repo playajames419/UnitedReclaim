@@ -1,2 +1,10 @@
 
 .idea/
+
+*.iml
+
+dev_server/
+
+out/
+
+target/

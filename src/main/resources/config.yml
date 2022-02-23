@@ -1,25 +1,3 @@
-# UnitedReclaim
-Configure your reclaims in a customizable GUI.
-
-![](img/Reclaim1.PNG)
-
-## Features
-* Customizable GUI
-* Lightweight
-
-## Getting Started
-1. Check our releases for latest version.
-2. Place file in your server plugins folder.
-3. Start your server to generate the default config.yml file
-4. Modify the config.yml to your likings
-5. Restart your server to apply.
-
-### Dependencies
-* Spigot/Paper/etc API or similar
-* That't it!
-
-## Config
-```yml
 message-prefix: '[UnitedReclaims] '
 deny-permission-message: "Sorry, you don't have permission to do that."
 gui: #Permission to access gui is unitedreclaim.gui.access
@@ -98,18 +76,3 @@ reclaims:
       item: 'STAINED_GLASS_PANE'
       display-name: 'null' # Null will remove the items display name
       slot: 8
-```
-
-## Help
-Contact me on Discord(Playajames#5723) or [create an issue](https://github.com/playajames419/UnitedReclaim/issues/new).
-
-## Authors
-Contributors names and contact info
-* playajames(Discord: Playajames#5723)
-
-## Version History
-* 0.1.0-SNAPSHOT
-    * Initial Release
-
-## License
-This project is licensed under the GPL-3.0 License.
