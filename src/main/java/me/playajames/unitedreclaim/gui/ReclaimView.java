@@ -38,7 +38,6 @@ public class ReclaimView extends View {
         Set<String> reclaimKeys = config.getConfigurationSection("reclaims").getKeys(false);
         for (String reclaimKey : reclaimKeys) {
             ConfigurationSection reclaimSection = config.getConfigurationSection("reclaims." + reclaimKey);
-            System.out.println(reclaimSection.getCurrentPath()); //todo remove
             ItemStack item = new ItemStack(Material.valueOf(reclaimSection.getString("gui-item.item")));
             if (reclaimSection.isString("gui-item.display-name")) {
                 ItemMeta meta = item.getItemMeta();
@@ -49,7 +48,7 @@ public class ReclaimView extends View {
                 item.setItemMeta(meta);
             }
 
-            slot(reclaimSection.getInt("gui-item.slot"), item) //todo indexoutofbounds, for some reason the slot does not exist, maybe the rows when creating the view is not pulling from config correctly?
+            slot(reclaimSection.getInt("gui-item.slot"), item)
                     .onClick(context -> {
                         context.setCancelled(true);
                         Player player = context.getPlayer();
