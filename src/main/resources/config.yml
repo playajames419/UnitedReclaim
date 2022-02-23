@@ -12,30 +12,40 @@ reclaims:
     gui-item:
       item: 'WHEAT'
       display-name: 'Reclaim 1'
-      row: 2
-      column: 4
+      slot: 1
     rewards:
-      - 'tellraw You have reclaimed "Reclaim 1".'
-      - 'broadcast {player.name} just reclaimed their rewards!'
+      - "tellraw $player.name '$message.prefixYou have reclaimed Reclaim 1.'"
+      - "broadcast $message.prefix $player.name just reclaimed their rewards!"
 
   reclaim2:
     permission: unitedreclaim.reclaim2
     gui-item:
       item: SUGAR_CANE
       display-name: 'Reclaim 2'
-      row: 2
-      column: 5
+      slot: 2
     rewards:
-      - 'tellraw You have reclaimed "Reclaim 2".'
-      - 'broadcast {player.name} just reclaimed their rewards!'
+      - "tellraw $player.name '$message.prefixYou have reclaimed Reclaim 2.'"
+      - "broadcast $message.prefix $player.name just reclaimed their rewards!"
 
   reclaim3:
-    permission: unitedreclaim.reclaim3
     gui-item:
       item: DIAMOND
       display-name: 'Reclaim 3'
-      row: 2
-      column: 6
+      slot: 3
     rewards:
-      - 'tellraw You have reclaimed "Reclaim 3".'
-      - 'broadcast {player.name} just reclaimed their rewards!'
+      - "tellraw $player.name '$message.prefixYou have reclaimed Reclaim 3.'"
+      - "broadcast $message.prefix $player.name just reclaimed their rewards!"
+
+  placeholder: # This is an item that will show in the gui that does nothing, example you can set a boarder around the gui with these
+    # Permission section not required
+    gui-item:
+      item: 'STAINED_GLASS_PANE'
+      display-name: 'null' # Null will remove the items display name
+      slot: 3
+
+  placeholder1: # This is an item that will show in the gui that does nothing, example you can set a boarder around the gui with these
+    # Permission section not required
+    gui-item:
+      item: 'STAINED_GLASS_PANE'
+      display-name: 'null' # Null will remove the items display name
+      slot: 0
